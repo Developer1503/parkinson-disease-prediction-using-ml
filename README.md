@@ -1,4 +1,4 @@
-Parkinson's Disease Prediction Web Application
+# Parkinson's Disease Prediction Web Application
 This project is a web application that predicts the likelihood of a person having Parkinson's disease based on certain medical voice measurements. It uses a trained machine learning model (SVM and Decision Tree) to classify the data.
 
 Features
