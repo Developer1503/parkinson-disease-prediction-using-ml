@@ -1,63 +1,53 @@
-Parkinson's Disease Detection README
-Overview
-This project implements a machine learning model to detect Parkinson's Disease based on vocal features. The dataset used for this project is obtained from a CSV file containing various attributes related to voice recordings of individuals diagnosed with Parkinson's Disease.
-Table of Contents
-Technologies Used
+Parkinson's Disease Prediction Web Application
+This project is a web application that predicts the likelihood of a person having Parkinson's disease based on certain medical voice measurements. It uses a trained machine learning model (SVM and Decision Tree) to classify the data.
+
+Features
+Flask Web Application: Users can input medical data through a simple web interface.
+Machine Learning Model: Supports Parkinson’s prediction using SVM and Decision Tree models.
+Data Standardization and Processing: Ensures accurate predictions by scaling and transforming input data.
+Real-time Prediction Results: Shows results immediately upon input.
 Dataset
-Installation
+The dataset used for training is a Parkinson’s disease dataset containing various medical measurements.
+
+Project Structure
+app.py: Contains the Flask application and routes for the web interface.
+model.pkl: Pickled file of the trained machine learning model.
+templates/index.html: HTML template for the web interface.
+Dependencies
+Flask
+sklearn
+pandas
+numpy
+matplotlib
+seaborn
+Setup Instructions
+Clone the Repository:
+bash
+Copy code
+git clone https://github.com/your-username/parkinsons-disease-prediction.git
+Install Requirements:
+bash
+Copy code
+pip install -r requirements.txt
+Run the Application:
+bash
+Copy code
+python app.py
+Open the Application: Visit http://127.0.0.1:5000/ in your web browser.
 Usage
-Model Training
-Model Evaluation
-Predictive System
-Contributing
+Navigate to the Web Interface: Open the application in your browser and enter the medical measurements as comma-separated values.
+
+Get Predictions: Submit the data to receive predictions on Parkinson’s disease presence.
+
+Model Information
+Algorithm Used: Support Vector Machine (SVM) and Decision Tree
+Metrics: Accuracy, Confusion Matrix, ROC Curve, Precision-Recall
+Example Data
+plaintext
+Copy code
+197.076,206.896,192.055,0.00289,0.00001,0.00166,0.00168,0.00498,0.01098,0.09700,0.00563,0.00680,0.00802,0.01689,0.00339,26.775,0.422229,0.741367,-7.3483,0.17755,1.743867,0.085569
+Results
+SVM Model: Outputs if a person has Parkinson’s Disease.
+Decision Tree Model: Provides alternative prediction for comparison.
 License
-Technologies Used
-Python
-NumPy
-Pandas
-Scikit-learn
-Matplotlib
-Seaborn
-Dataset
-The dataset used in this project is a CSV file (parkinsons.csv) that contains the following columns:
-MDVP:Fo(Hz): Fundamental frequency
-MDVP:Fhi(Hz): Maximum frequency
-MDVP:Flo(Hz): Minimum frequency
-MDVP:Jitter(%): Jitter percentage
-MDVP:Jitter(Abs): Absolute jitter
-MDVP:RAP: Relative average perturbation
-MDVP:PPQ: Pitch period perturbation quotient
-Shimmer: Amplitude variation
-NHR: Noise-to-harmonics ratio
-HNR: Harmonics-to-noise ratio
-RPDE: Recurrence period density entropy
-DFA: Detrended fluctuation analysis
-status: Target variable (1 = Parkinson's positive, 0 = Healthy)
-Installation
-To run this project, ensure you have Python installed on your machine. Then, install the required libraries using pip:
-bash
-pip install numpy pandas scikit-learn matplotlib seaborn
-
-Usage
-Clone the repository or download the files.
-Place the parkinsons.csv file in the same directory as the script.
-Run the script using Python:
-bash
-python copy_of_project2_parkinson-s_disease_detection-rm.py
-
-Model Training
-The project includes two machine learning models for classification:
-Support Vector Machine (SVM)
-Decision Tree Classifier
-Both models are trained using a training dataset split from the original dataset.
-Steps for Model Training:
-Load and preprocess the data.
-Split the data into training and testing sets.
-Standardize the features.
-Train both models on the training data.
-Model Evaluation
-After training, the models are evaluated based on their accuracy scores and confusion matrices:
-Calculate accuracy on both training and testing datasets.
-Generate confusion matrices to visualize model performance.
-Predictive System
-The script includes functionality to make predictions based on new input data. Users can input vocal feature values, and the model will predict whether the individual has Parkinson's Disease or not.
+This project is licensed under the MIT License
