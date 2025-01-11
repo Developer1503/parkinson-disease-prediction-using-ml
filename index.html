@@ -102,14 +102,21 @@
         </form>
 
         <!-- Display prediction results if available -->
-        {% if svm_result %}
-            <div class="alert alert-info mt-4">{{ svm_result }}</div>
-        {% endif %}
-        {% if dt_result %}
-            <div class="alert alert-info mt-4">{{ dt_result }}</div>
+        {% if message %}
+            <div class="alert alert-info mt-4">{{ message }}</div>
         {% endif %}
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var element = document.getElementById('yourElementId'); // Replace with your actual element ID
+            if (element) {
+                element.classList.add('your-class'); // Replace with your actual class
+            } else {
+                console.error('Element not found');
+            }
+        });
+    </script>
 </body>
 </html>
