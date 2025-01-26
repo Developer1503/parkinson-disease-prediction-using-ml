@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # Parkinson's Disease Prediction Web Application
+=======
+Parkinson's Disease Prediction Web Application
+>>>>>>> Stashed changes
 This project is a web application that predicts the likelihood of a person having Parkinson's disease based on certain medical voice measurements. It uses a trained machine learning model (SVM and Decision Tree) to classify the data.
 
 Features
@@ -34,6 +38,7 @@ bash
 Copy code
 python app.py
 Open the Application: Visit http://127.0.0.1:5000/ in your web browser.
+<<<<<<< Updated upstream
 The dataset used for training is a Parkinson’s disease dataset containing various medical measurements.
 
 Project Structure
@@ -61,6 +66,8 @@ bash
 Copy code
 python app.py
 Open the Application: Visit http://127.0.0.1:5000/ in your web browser.
+=======
+>>>>>>> Stashed changes
 Usage
 Navigate to the Web Interface: Open the application in your browser and enter the medical measurements as comma-separated values.
 
@@ -76,6 +83,7 @@ Copy code
 Results
 SVM Model: Outputs if a person has Parkinson’s Disease.
 Decision Tree Model: Provides alternative prediction for comparison.
+<<<<<<< Updated upstream
 Navigate to the Web Interface: Open the application in your browser and enter the medical measurements as comma-separated values.
 
 Get Predictions: Submit the data to receive predictions on Parkinson’s disease presence.
@@ -92,3 +100,7 @@ SVM Model: Outputs if a person has Parkinson’s Disease.
 Decision Tree Model: Provides alternative prediction for comparison.
 License
 This project is licensed under the MIT License
+=======
+License
+This project is licensed under the MIT License
+>>>>>>> Stashed changes
