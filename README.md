@@ -1,106 +1,76 @@
-<<<<<<< Updated upstream
-# Parkinson's Disease Prediction Web Application
-=======
-Parkinson's Disease Prediction Web Application
->>>>>>> Stashed changes
-This project is a web application that predicts the likelihood of a person having Parkinson's disease based on certain medical voice measurements. It uses a trained machine learning model (SVM and Decision Tree) to classify the data.
+# 🧠 Parkinson's Disease Prediction Web App
 
-Features
-Flask Web Application: Users can input medical data through a simple web interface.
-Machine Learning Model: Supports Parkinson’s prediction using SVM and Decision Tree models.
-Data Standardization and Processing: Ensures accurate predictions by scaling and transforming input data.
-Real-time Prediction Results: Shows results immediately upon input.
-Dataset
-The dataset used for training is a Parkinson’s disease dataset containing various medical measurements.
+This repository contains a **Flask-based web application** for predicting Parkinson's disease using machine learning models. The application allows users to input medical measurements and receive predictions based on trained models.
 
-Project Structure
-app.py: Contains the Flask application and routes for the web interface.
-model.pkl: Pickled file of the trained machine learning model.
-templates/index.html: HTML template for the web interface.
-Dependencies
-Flask
-sklearn
-pandas
-numpy
-matplotlib
-seaborn
-Setup Instructions
-Clone the Repository:
-bash
-Copy code
-git clone https://github.com/your-username/parkinsons-disease-prediction.git
-Install Requirements:
-bash
-Copy code
+## 🚀 Features
+- **Machine Learning Models:** SVM, Decision Tree, Random Forest, Gradient Boosting
+- **Web Interface:** User-friendly input form for predictions
+- **Model Training & Evaluation:** Comprehensive training script with performance metrics
+- **Data Preprocessing:** Feature scaling and class imbalance handling using SMOTEENN
+- **Visualizations:** Heatmaps, ROC curves, precision-recall curves
+
+## 📂 Repository Structure
+
+```
+📦 parkinsons-disease-prediction
+├── 📄 README.md               # Project Overview
+├── 📄 app.py                  # Flask Web App
+├── 📄 parkinsons_disease_detection.py # Model Training Script
+├── 📄 requirements.txt         # Dependencies
+├── 📂 templates/
+│   ├── index.html            # Web Interface Template
+├── 📂 models/
+│   ├── svm_model.pkl         # Saved SVM Model
+│   ├── dt_model.pkl          # Saved Decision Tree Model
+│   ├── rf_model.pkl          # Saved Random Forest Model
+│   ├── gb_model.pkl          # Saved Gradient Boosting Model
+│   ├── scaler.pkl            # Saved Scaler for Preprocessing
+├── 📂 data/
+│   ├── parkinsons.csv        # Dataset
+```
+
+## 🏗️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/parkinsons-disease-prediction.git
+cd parkinsons-disease-prediction
+```
+
+### 2️⃣ Install Dependencies
+```sh
 pip install -r requirements.txt
-Run the Application:
-bash
-Copy code
+```
+
+### 3️⃣ Run the Web Application
+```sh
 python app.py
-Open the Application: Visit http://127.0.0.1:5000/ in your web browser.
-<<<<<<< Updated upstream
-The dataset used for training is a Parkinson’s disease dataset containing various medical measurements.
+```
 
-Project Structure
-app.py: Contains the Flask application and routes for the web interface.
-model.pkl: Pickled file of the trained machine learning model.
-templates/index.html: HTML template for the web interface.
-Dependencies
-Flask
-sklearn
-pandas
-numpy
-matplotlib
-seaborn
-Setup Instructions
-Clone the Repository:
-bash
-Copy code
-git clone https://github.com/your-username/parkinsons-disease-prediction.git
-Install Requirements:
-bash
-Copy code
-pip install -r requirements.txt
-Run the Application:
-bash
-Copy code
-python app.py
-Open the Application: Visit http://127.0.0.1:5000/ in your web browser.
-=======
->>>>>>> Stashed changes
-Usage
-Navigate to the Web Interface: Open the application in your browser and enter the medical measurements as comma-separated values.
+📌 The application will be available at **http://127.0.0.1:5000/**
 
-Get Predictions: Submit the data to receive predictions on Parkinson’s disease presence.
+## 🔬 Model Training & Evaluation
+The `parkinsons_disease_detection.py` script:
+- Loads the dataset (`parkinsons.csv`)
+- Performs **Exploratory Data Analysis (EDA)**
+- Trains models (**SVM, Decision Tree, Random Forest, Gradient Boosting**)
+- Evaluates models using accuracy, confusion matrix, and ROC curves
+- Saves the best-performing models
 
-Model Information
-Algorithm Used: Support Vector Machine (SVM) and Decision Tree
-Metrics: Accuracy, Confusion Matrix, ROC Curve, Precision-Recall
-Example Data
-plaintext
-Copy code
-197.076,206.896,192.055,0.00289,0.00001,0.00166,0.00168,0.00498,0.01098,0.09700,0.00563,0.00680,0.00802,0.01689,0.00339,26.775,0.422229,0.741367,-7.3483,0.17755,1.743867,0.085569
-Results
-SVM Model: Outputs if a person has Parkinson’s Disease.
-Decision Tree Model: Provides alternative prediction for comparison.
-<<<<<<< Updated upstream
-Navigate to the Web Interface: Open the application in your browser and enter the medical measurements as comma-separated values.
+## 📊 Visualizations
+The script includes:
+- **Feature correlations** using heatmaps
+- **Model comparison plots**
+- **ROC & Precision-Recall curves**
 
-Get Predictions: Submit the data to receive predictions on Parkinson’s disease presence.
+## 📌 Usage
+1. **Run the Flask app** and open it in a browser.
+2. **Enter medical measurements** in the form.
+3. **Submit** to get a prediction on Parkinson’s disease.
+4. **Example data** is provided for testing.
 
-Model Information
-Algorithm Used: Support Vector Machine (SVM) and Decision Tree
-Metrics: Accuracy, Confusion Matrix, ROC Curve, Precision-Recall
-Example Data
-plaintext
-Copy code
-197.076,206.896,192.055,0.00289,0.00001,0.00166,0.00168,0.00498,0.01098,0.09700,0.00563,0.00680,0.00802,0.01689,0.00339,26.775,0.422229,0.741367,-7.3483,0.17755,1.743867,0.085569
-Results
-SVM Model: Outputs if a person has Parkinson’s Disease.
-Decision Tree Model: Provides alternative prediction for comparison.
-License
-This project is licensed under the MIT License
-=======
-License
-This project is licensed under the MIT License
->>>>>>> Stashed changes
+## ⚖️ License
+This project is licensed under the **MIT License**. Feel free to use and modify it.
+
+---
+🚀 **Contributions are welcome!** Feel free to fork this repo and improve the model or UI. Happy coding! 🎯
