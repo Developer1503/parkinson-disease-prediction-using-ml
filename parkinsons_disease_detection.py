@@ -20,7 +20,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load the dataset
-data = pd.read_csv('parkinson-disease-prediction-using-ml/parkinsons.csv')
+data = pd.read_csv('parkinsons.csv')
 
 # Preprocess the data
 X = data.drop(columns=['name', 'status'])
